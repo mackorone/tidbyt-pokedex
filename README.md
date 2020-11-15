@@ -9,4 +9,4 @@ Each time the app renders, a random Pokemon is displayed.
 1. Run `pixlet serve pokedex.star`
 1. Go to [http://localhost:8080](http://localhost:8080)
 
-![](https://github.com/mackorone/tidbyt-pokedex/blob/main/pokedex.gif)
+![](https://github.com/mackorone/tidbyt-pokedex/blob/main/pokedex.png)

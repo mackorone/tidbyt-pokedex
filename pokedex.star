@@ -17,26 +17,22 @@ def main():
     sprite_url = pokemon["sprites"]["versions"]["generation-vii"]["icons"]["front_default"]
     sprite = http.get(sprite_url).body()
     return render.Root(
-        child=render.Row(
+        child=render.Stack(
             children=[
-                render.Column(
+                render.Row(
                     children=[
-                        render.Text("# " + str(id_)),
-                        render.Marquee(
-                            child=render.Text(name),
-                            width=32,
-                        ),
-                        render.Text(height),
-                        render.Text(weight),
+                        render.Box(width=32),
+                        render.Box(render.Image(sprite)),
                     ]
                 ),
                 render.Column(
                     children=[
-                        render.Box(
-                            render.Image(sprite)
-                        )
-                    ],
-                )
+                        render.Text(name),
+                        render.Text("# " + str(id_)),
+                        render.Text(height),
+                        render.Text(weight),
+                    ]
+                ),
             ]
         )
     )
