@@ -40,4 +40,4 @@ def main():
 
 def random():
     """Return a pseudo-random number in [0, 1)"""
-    return time.now().nanosecond() / 1000000000
+    return time.now().nanosecond / 1000000000
