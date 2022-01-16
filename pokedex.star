@@ -1,6 +1,6 @@
 load("http.star", "http")
-load("time.star", "time")
 load("render.star", "render")
+load("time.star", "time")
 
 
 NUM_POKEMON = 386
@@ -40,4 +40,4 @@ def main():
 
 def random():
     """Return a pseudo-random number in [0, 1)"""
-    return time.now().nanosecond / 1000000000
+    return time.now().nanosecond / (1000 * 1000 * 1000)
